@@ -1,23 +1,19 @@
 <template>
   <div id="app">
-    <img src="./assets/logo.png">
+    <Tabbar></Tabbar>
     <router-view></router-view>
   </div>
 </template>
 
-<script>
+<script type="text/ecmascript-6">
+import Tabbar from '@/components/Tabbar/Tabbar.vue';
 export default {
-  name: 'app'
-}
+  components : {
+    Tabbar
+  }
+};
 </script>
 
-<style>
-#app {
-  font-family: 'Avenir', Helvetica, Arial, sans-serif;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
-  text-align: center;
-  color: #2c3e50;
-  margin-top: 60px;
-}
+<style lang="stylus" rel="stylesheet/stylus">
+
 </style>
